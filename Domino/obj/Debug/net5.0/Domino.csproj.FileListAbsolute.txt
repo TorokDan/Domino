@@ -1,0 +1,16 @@
+/home/TorokDan/Documents/egyetem/prog1/Levi/Domino/Domino/bin/Debug/net5.0/Domino
+/home/TorokDan/Documents/egyetem/prog1/Levi/Domino/Domino/bin/Debug/net5.0/Domino.deps.json
+/home/TorokDan/Documents/egyetem/prog1/Levi/Domino/Domino/bin/Debug/net5.0/Domino.runtimeconfig.json
+/home/TorokDan/Documents/egyetem/prog1/Levi/Domino/Domino/bin/Debug/net5.0/Domino.runtimeconfig.dev.json
+/home/TorokDan/Documents/egyetem/prog1/Levi/Domino/Domino/bin/Debug/net5.0/Domino.dll
+/home/TorokDan/Documents/egyetem/prog1/Levi/Domino/Domino/bin/Debug/net5.0/ref/Domino.dll
+/home/TorokDan/Documents/egyetem/prog1/Levi/Domino/Domino/bin/Debug/net5.0/Domino.pdb
+/home/TorokDan/Documents/egyetem/prog1/Levi/Domino/Domino/obj/Debug/net5.0/Domino.csprojAssemblyReference.cache
+/home/TorokDan/Documents/egyetem/prog1/Levi/Domino/Domino/obj/Debug/net5.0/Domino.GeneratedMSBuildEditorConfig.editorconfig
+/home/TorokDan/Documents/egyetem/prog1/Levi/Domino/Domino/obj/Debug/net5.0/Domino.AssemblyInfoInputs.cache
+/home/TorokDan/Documents/egyetem/prog1/Levi/Domino/Domino/obj/Debug/net5.0/Domino.AssemblyInfo.cs
+/home/TorokDan/Documents/egyetem/prog1/Levi/Domino/Domino/obj/Debug/net5.0/Domino.csproj.CoreCompileInputs.cache
+/home/TorokDan/Documents/egyetem/prog1/Levi/Domino/Domino/obj/Debug/net5.0/Domino.dll
+/home/TorokDan/Documents/egyetem/prog1/Levi/Domino/Domino/obj/Debug/net5.0/ref/Domino.dll
+/home/TorokDan/Documents/egyetem/prog1/Levi/Domino/Domino/obj/Debug/net5.0/Domino.pdb
+/home/TorokDan/Documents/egyetem/prog1/Levi/Domino/Domino/obj/Debug/net5.0/Domino.genruntimeconfig.cache

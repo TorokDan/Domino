@@ -4,7 +4,11 @@
     <projectFile>Domino/Domino.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7f2c1ed-2d14-4df6-9960-b1e78194fdee" name="Changes" comment="" />
+    <list default="true" id="a7f2c1ed-2d14-4df6-9960-b1e78194fdee" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Domino/DominoSor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Domino/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Domino/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domino/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domino/Program.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,13 +61,14 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649747929079</updated>
-      <workItem from="1649747936664" duration="2097000" />
+      <workItem from="1649747936664" duration="3875000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">

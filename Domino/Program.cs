@@ -6,7 +6,8 @@ namespace Domino
     {
         static void Main(string[] args)
         {
-            Elem[] data = Beolvasas.Beolvas();
+            DominoSor sor = new DominoSor(Beolvasas.Beolvas());
+            Console.WriteLine(sor.SorbaRakas());
             ;
         }
     }

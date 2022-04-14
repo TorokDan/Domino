@@ -1,5 +1,3 @@
-using System;
-using System.ComponentModel;
 
 namespace Domino
 {
@@ -16,52 +14,69 @@ namespace Domino
 
         public char SorbaRakas()
         {
+            int dataEredetiHossza = _data.Length;
             Elem talalt = _data[0];
+            Elem elso = _data[0];
             BeIllesztes(talalt);
-            while (_sor.Length != _data.Length&&
+            
+            while (_data.Length != 0 &&
                    talalt != null)
             {
-                talalt = Keres(talalt.Elso);
-            }
-            while (_sor.Length != _data.Length&&
-                   talalt != null)
-            {
-                talalt = Keres(talalt.Masodik);
+                talalt = Keres(talalt);
             }
 
-            return _sor.Length == _data.Length ? 'Y' : 'N';
+            talalt = elso;
+            while (_data.Length != 0 &&
+                   talalt != null)
+            {
+                talalt = Keres(talalt);
+            }
+            return _sor.Length == dataEredetiHossza ? 'Y' : 'N';
         }
 
         /// <summary>
-        /// Megkeresi azt az elemet a _data tömbben, ami tartalmazza a keresett értéket, azon végrehajtja
+        /// Megkeresi azt az elemet a _data tömbben, ami tartalmazza a keresett elem eddig fel nem használt értékét, azon végrehajtja
         /// a Beillesztést, és visszatér az értékével, különben null.
         /// </summary>
         /// <param name="keresett"></param>
         /// <returns></returns>
-        private Elem Keres(int keresett)
+        private Elem Keres(Elem keresett)
         {
             int szamlalo = 0;
-            while (szamlalo < _data.Length && 
-                   ((_data[szamlalo].Elso == keresett && _data[szamlalo].ElsoSzabad) || 
-                   (_data[szamlalo].Masodik == keresett && _data[szamlalo].MasodikSzabad)))
+            int keresettSzam = keresett.ElsoSzabad ? keresett.Elso : keresett.Masodik;
+            while (szamlalo < _data.Length &&
+                   _data[szamlalo].Elso != keresettSzam &&
+                   _data[szamlalo].Masodik != keresettSzam)
             {
                 szamlalo++;
             }
+
             if (szamlalo == _data.Length)
+            {
+                keresett.ElsoHasznal();
                 return null;
+            }
             else
             {
-                if (_data[szamlalo].Elso == keresett && _data[szamlalo].ElsoSzabad)
-                    _data[szamlalo].ElsoHasznal();
+                Elem tmp = _data[szamlalo];
+                if (tmp.Elso == keresettSzam)
+                    tmp.ElsoHasznal();
                 else
-                    _data[szamlalo].MasodikHasznal();
-                BeIllesztes(_data[szamlalo]);
-                return _data[szamlalo];
+                    tmp.MasodikHasznal();
+                if (keresett.ElsoSzabad && keresett.MasodikSzabad)
+                {
+                    if (keresett.Elso == keresettSzam)
+                        keresett.ElsoHasznal();
+                    else
+                        keresett.MasodikHasznal();
+                }
+                BeIllesztes(tmp);
+                return tmp;
             }
         }
 
         /// <summary>
-        /// A megadott elemet beilleszti a _sor változóba.
+        /// A megadott elemet beilleszti a _sor változóba, valamit törli a _datából.
         /// </summary>
         /// <param name="beillesztendo"></param>
         private void BeIllesztes(Elem beillesztendo)
@@ -74,6 +89,16 @@ namespace Domino
 
             tmp[_sor.Length] = beillesztendo;
             _sor = tmp;
+
+            tmp = new Elem[_data.Length - 1];
+            int seged = 0;
+            for (int i = 0; i < _data.Length; i++)
+            {
+                if (_data[i] != beillesztendo)
+                    tmp[seged++] = _data[i];
+            }
+
+            _data = tmp;
         }
     }
 }

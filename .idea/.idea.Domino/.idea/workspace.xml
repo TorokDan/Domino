@@ -4,9 +4,10 @@
     <projectFile>Domino/Domino.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7f2c1ed-2d14-4df6-9960-b1e78194fdee" name="Changes" comment="Elem módosítása.">
+    <list default="true" id="a7f2c1ed-2d14-4df6-9960-b1e78194fdee" name="Changes" comment="Tesztelhető.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Domino/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Domino/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domino.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Domino.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domino/Beolvasas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domino/Beolvasas.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domino/DominoSor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domino/DominoSor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domino/Elem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domino/Elem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Domino/bin/Debug/net5.0/Domino.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Domino/bin/Debug/net5.0/Domino.dll" afterDir="false" />
@@ -20,6 +21,14 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/27f8ca52ec2b49faee76f18aa9904154d150b32442c447aea21abec24988e1bb/Number.Parsing.cs" root0="SKIP_HIGHLIGHTING" />
@@ -41,7 +50,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.Domino">
     <configuration name="Domino" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -71,7 +80,7 @@
       <updated>1649747929079</updated>
       <workItem from="1649747936664" duration="5159000" />
       <workItem from="1649779149889" duration="733000" />
-      <workItem from="1649918753868" duration="3293000" />
+      <workItem from="1649918753868" duration="11394000" />
     </task>
     <task id="LOCAL-00001" summary="változtatások">
       <created>1649771277591</created>
@@ -80,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649771277591</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Tesztelhető.">
+      <created>1649922231994</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1649922231995</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +120,26 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="változtatások" />
     <MESSAGE value="Elem módosítása." />
-    <option name="LAST_COMMIT_MESSAGE" value="Elem módosítása." />
+    <MESSAGE value="Tesztelhető." />
+    <option name="LAST_COMMIT_MESSAGE" value="Tesztelhető." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Domino/DominoSor.cs</url>
+          <line>27</line>
+          <properties documentPath="$PROJECT_DIR$/Domino/DominoSor.cs" initialLine="27" containingFunctionPresentation="method 'SorbaRakas'">
+            <startOffsets>
+              <option value="603" />
+            </startOffsets>
+            <endOffsets>
+              <option value="617" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

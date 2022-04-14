@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel;
 
 namespace Domino
@@ -5,57 +6,74 @@ namespace Domino
     public class DominoSor
     {
         private Elem[] _data;
+        private Elem[] _sor;
         
         public DominoSor(Elem[] data)
         {
             _data = data;
+            _sor = new Elem[0];
         }
 
         public char SorbaRakas()
         {
-            while (0 < _data.Length && Keres(_data[0].Ertek[0]) != -1)
+            Elem talalt = _data[0];
+            BeIllesztes(talalt);
+            while (_sor.Length != _data.Length&&
+                   talalt != null)
             {
-                
+                talalt = Keres(talalt.Elso);
             }
-            return 0 == _data.Length ? 'Y' : 'N';
+            while (_sor.Length != _data.Length&&
+                   talalt != null)
+            {
+                talalt = Keres(talalt.Masodik);
+            }
+
+            return _sor.Length == _data.Length ? 'Y' : 'N';
         }
 
-        private int Keres(int keresett)
+        /// <summary>
+        /// Megkeresi azt az elemet a _data tömbben, ami tartalmazza a keresett értéket, azon végrehajtja
+        /// a Beillesztést, és visszatér az értékével, különben null.
+        /// </summary>
+        /// <param name="keresett"></param>
+        /// <returns></returns>
+        private Elem Keres(int keresett)
         {
             int szamlalo = 0;
-            while (szamlalo < _data.Length && !Vizsgal(szamlalo, keresett))
-                szamlalo++;
-
-            int vissza;
-            if (szamlalo < _data.Length)
+            while (szamlalo < _data.Length && 
+                   ((_data[szamlalo].Elso == keresett && _data[szamlalo].ElsoSzabad) || 
+                   (_data[szamlalo].Masodik == keresett && _data[szamlalo].MasodikSzabad)))
             {
-                if (_data[szamlalo].Ertek[0] == keresett)
-                    vissza = _data[szamlalo].Ertek[1];
-                else
-                    vissza = _data[szamlalo].Ertek[0];
-                ElemTorles(szamlalo);
+                szamlalo++;
             }
+            if (szamlalo == _data.Length)
+                return null;
             else
-                vissza = -1;
-            return vissza;
+            {
+                if (_data[szamlalo].Elso == keresett && _data[szamlalo].ElsoSzabad)
+                    _data[szamlalo].ElsoHasznal();
+                else
+                    _data[szamlalo].MasodikHasznal();
+                BeIllesztes(_data[szamlalo]);
+                return _data[szamlalo];
+            }
         }
 
-        private void ElemTorles(int szamlalo)
+        /// <summary>
+        /// A megadott elemet beilleszti a _sor változóba.
+        /// </summary>
+        /// <param name="beillesztendo"></param>
+        private void BeIllesztes(Elem beillesztendo)
         {
-            Elem[] tmp = new Elem[_data.Length - 1];
-            int seged = 0;
-            for (int i = 0; i < tmp.Length; i++)
-                if (seged != szamlalo)
-                    tmp[i] = _data[seged++];
-            _data = tmp;
-        }
+            Elem[] tmp = new Elem[_sor.Length + 1];
+            for (int i = 0; i < _sor.Length; i++)
+            {
+                tmp[i] = _sor[i];
+            }
 
-        private bool Vizsgal(int szamlalo ,int ertek)
-        {
-            if (_data[szamlalo].Ertek[0] == ertek ||
-                _data[szamlalo].Ertek[1] == ertek)
-                return true;
-            return false;
+            tmp[_sor.Length] = beillesztendo;
+            _sor = tmp;
         }
     }
 }

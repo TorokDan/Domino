@@ -4,10 +4,17 @@
     <projectFile>Domino/Domino.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a7f2c1ed-2d14-4df6-9960-b1e78194fdee" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Domino/DominoSor.cs" afterDir="false" />
+    <list default="true" id="a7f2c1ed-2d14-4df6-9960-b1e78194fdee" name="Changes" comment="Elem módosítása.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Domino/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Domino/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domino/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domino/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domino.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Domino.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domino/DominoSor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domino/DominoSor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domino/Elem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domino/Elem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domino/bin/Debug/net5.0/Domino.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Domino/bin/Debug/net5.0/Domino.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domino/bin/Debug/net5.0/Domino.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Domino/bin/Debug/net5.0/Domino.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domino/bin/Debug/net5.0/ref/Domino.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Domino/bin/Debug/net5.0/ref/Domino.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domino/obj/Debug/net5.0/Domino.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Domino/obj/Debug/net5.0/Domino.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domino/obj/Debug/net5.0/Domino.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Domino/obj/Debug/net5.0/Domino.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domino/obj/Debug/net5.0/ref/Domino.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Domino/obj/Debug/net5.0/ref/Domino.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.24427481" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -61,15 +69,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1649747929079</updated>
-      <workItem from="1649747936664" duration="3875000" />
+      <workItem from="1649747936664" duration="5159000" />
+      <workItem from="1649779149889" duration="733000" />
+      <workItem from="1649918753868" duration="3293000" />
     </task>
+    <task id="LOCAL-00001" summary="változtatások">
+      <created>1649771277591</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649771277591</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -84,5 +102,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="változtatások" />
+    <MESSAGE value="Elem módosítása." />
+    <option name="LAST_COMMIT_MESSAGE" value="Elem módosítása." />
   </component>
 </project>
